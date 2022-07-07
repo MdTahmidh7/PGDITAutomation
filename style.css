@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(167, 213, 196);
+    min-height: 200vh;
+}
+header{
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding: 40px 100px;
+    z-index: 111;
+    background: rgba(39, 43, 43, 0.81);
+    height: 90px;
+    border-radius: 10px;
+}
+header a img{
+    width: 50px;
+}
+.logo{
+    position: relative;
+    font-weight: 700;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 2rem;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    position: relative;
+}
+ul li a{
+  position: relative;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: 0.5s;
+  padding: 8px;
+  letter-spacing: .05rem;
+}
+ul li a:hover{
+  color: rgb(30, 196, 152);
+  background: rgb(53, 2, 2);
+  border-radius: 5px;
+}
+
+/* Login section */
+.login{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(74, 75, 80, 0.7),
+rgba(4,9,30,0.7)),url(./img/campus1.jpeg);
+background-size: cover;
+}
+.login-div{
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+}
+.login-div h3{
+text-align: center;
+margin-top: 30px;
+margin-bottom: 20px;
+}
+.loginform{
+width: 60%;
+margin: auto;
+border-radius: 10px;
+padding: 23px;
+border-radius: 32px;
+background: #6de6c7;
+box-shadow:  9px 9px 16px #afafaf,
+     -9px -9px 16px #c3f5e2;
+}
+.loginform .mb-3 img{
+    display: flex;
+    width: 60px;
+    margin: auto;
+    border-radius: 52px;
+    border: 3px solid rgb(255, 254, 254);
+    }
+.loginform .title{
+text-align: center;
+font-weight: 600;
+font-size: 1.5rem;
+letter-spacing: .1rem;
+}
+.loginform .mb-3 input{
+    padding: 10px;
+    background: rgb(108, 196, 179);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    border-radius: 32px;
+    background: #6de6c7;
+    box-shadow:  19px 19px 30px #75c1a3c4,
+         -19px -19px 30px #8efbd9;
+    }
+    .loginform .mb-3 input:hover{
+    background: #33e8bb;
+    border-radius: 12px;
+    }
+.loginform .mb-3 a{
+text-decoration: none;
+font-size: 17px;
+color: rgb(212, 97, 15);
+}
+.loginform .mb-3 a:hover{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(236, 0, 0);
+}
+.loginform button{
+color: #000;
+background: rgb(21, 217, 168);
+font-weight: 500;
+border: none;
+border-radius: 32px;
+background: #6de6c7;
+box-shadow:  19px 19px 30px #75c1a3c4,
+     -19px -19px 30px #8efbd9;
+}
+.loginform button:hover{
+color: rgb(123, 3, 222);
+font-weight: 500;
+width: 150px;
+border:1px solid rgb(175, 173, 173);
+border-radius: 8px;
+transform: translate(5px, -2px);
+transition:  0.2s;
+background: #33e8bb;
+box-shadow:  19px 19px 30px #75c1a3c4,
+     -19px -19px 30px #8efbd9;
+}
+
+/* Biller Id Recovery Section */
+    .billerIdRecovery-div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    }
+    .biller-div h3{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    }
+    .billerIdFromform{
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 23px;
+    border-radius: 32px;
+    background: #6de6c7;
+    box-shadow:  9px 9px 16px #afafaf,
+         -9px -9px 16px #c3f5e2;
+    }
+    .billerIdFromform .mb-3 img{
+        display: flex;
+        width: 60px;
+        margin: auto;
+        border-radius: 52px;
+        border: 3px solid rgb(255, 254, 254);
+        }
+    .billerIdFromform .title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    }
+    .billerIdFromform .mb-3 input{
+        padding: 10px;
+        background: rgb(108, 196, 179);
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        border-radius: 32px;
+        background: #6de6c7;
+        box-shadow:  19px 19px 30px #75c1a3c4,
+             -19px -19px 30px #8efbd9;
+        }
+        .billerIdFromform .mb-3 input:hover{
+        background: #33e8bb;
+        border-radius: 8px;
+        border:1px solid rgb(175, 173, 173);
+        }
+    .billerIdFromform .mb-3 p{
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(212, 97, 15);
+    }
+    .billerIdFromform button{
+    color: #000;
+    background: rgb(21, 217, 168);
+    font-weight: 500;
+    border: none;
+    border-radius: 32px;
+    background: #6de6c7;
+    box-shadow:  19px 19px 30px #75c1a3c4,
+         -19px -19px 30px #8efbd9;
+    }
+    .billerIdFromform button:hover{
+    color: rgb(123, 3, 222);
+    font-weight: 500;
+    width: 150px;
+    border:2px solid rgb(175, 173, 173);
+    border-radius: 8px;
+    transform: translate(5px, -2px);
+    transition:  0.2s;
+    background: #33e8bb;
+    box-shadow:  19px 19px 30px #75c1a3c4,
+         -19px -19px 30px #8efbd9;
+    }
+
+    /* Apply Area */
+    .apply{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        }
+            .applicationProcessForm{
+            width: 60%;
+            margin: auto;
+            border-radius: 10px;
+            padding: 23px;
+            border-radius: 32px;
+            background: #6de6c7;
+            box-shadow:  9px 9px 16px #afafaf,
+                 -9px -9px 16px #c3f5e2;
+            }
+            .applicationProcessForm .mb-3 img{
+                display: flex;
+                width: 60px;
+                margin: auto;
+                border-radius: 52px;
+                border: 3px solid rgb(255, 254, 254);
+                }
+            .applicationProcessForm .title{
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+            }
+                .applicationProcessForm a{
+                    text-align: center;
+                    padding: 10px;
+                   background: rgb(108, 196, 179);
+                   text-decoration: none;
+                   font-size: 17px;
+                   font-weight: 500;
+                   color: rgb(0, 0, 0);
+                   border-radius: 32px;
+                   background: #6de6c7;
+                   box-shadow:  19px 19px 30px #75c1a3c4,
+                       -19px -19px 30px #8efbd9;
+               }
+
+                .applicationProcessForm .mb-3 a:hover{
+                    background: #33e8bb;
+                    text-decoration: none;
+                    
+                    border-radius: 18px;
+                    border:2px solid rgb(175, 173, 173);
+                    }
+            /* Get Biller Id */
+            .getBillerId{
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                }
+
+                /* FAQ Section */
+         .faq{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        }
+        .accor{
+            color: rgb(0, 0, 0);
+            background: #33e8bb;
+            box-shadow:  19px 19px 30px #75c1a3c4,
+            -19px -19px 30px #8efbd9;
+        }
+    .accor h2{
+        background: #6de6c7;
+        color: #000;
+    }
+    .accordion-button:not(.collapsed){
+        color: inherit;
+        background: #6de6c7;
+    }
+
+
+    /* About Section */
+
+    .about{
+        width: 100%;
+        background: #a7d5c4;
+        height: 100vh; 
+        display: flex;
+        justify-content: center; 
+        }
+        .bgcolor{
+            background: #a7d5c4;
+        }
+        
+        .container1{
+            width: 100vw;
+            background: #a7d5c4;
+            padding: 50px;
+        }
+        .container{
+           
+            background: #a7d5c4;
+            
+        } 
+ 
+        .social-link {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            border-radius: 50%;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+          }
+          
+          .social-link:hover,
+          .social-link:focus {
+            /* background: #ddd; */
+            text-decoration: none;
+            color: #555;
+          }
+          .row .col-lg-5 img{
+            border-radius: 31px 38px 31px 38px;
+            box-shadow:  4px 4px 10px #5b9880c4,
+            -4px -4px 10px #c7faea;
+          }
+         .container .aboutTitle h1{
+            font-weight: 600;
+            letter-spacing: .5rem;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+         }
+          .facaltyCard{
+            /* background: #33e8bb;
+            box-shadow:  19px 19px 30px #325144c4,
+            -19px -19px 30px #d8eee7; */
+            background: #6de6c7;
+            border-radius: 30px;
+            box-shadow:  4px 4px 10px #6eba9bc4,
+                 -4px -4px 10px #90ffdc;
+          }
+        .facaltyCard ul li img {
+            border-radius: 50px;
+        }
+        .facaltyCard ul li button {
+            border-radius: 50px;
+        }
+
