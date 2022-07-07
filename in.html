@@ -1,301 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="font-awesome.min.css">
-   <link rel="stylesheet" href="./fontawesome/css/fontawesome.min.css">
-   
-    <title>Document</title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="./fontawesome/css/fontawesome.min.css">
+
+  <title>Document</title>
+
 </head>
 <body>
+  <section class="coverPage" id="homeArea" >
     <header>
-        <a href="#" class="logo"><img src="./img/NstuLogo.png" alt=""></a>
-    <ul>
-            <li><a  data-link="homeArea" class="scroll_to" >Home</a></li>
-            <li><a  data-link="aboutArea" class="scroll_to" >About</a></li>
-            <li><a  data-link="applyArea" class="scroll_to" >Notice</a></li>
-            <li><a  data-link="applyArea" class="scroll_to" >Apply</a></li>
-            <li><a  data-link="login-area" class="scroll_to" >Login</a></li>
-            <li><a  data-link="faqArea" class="scroll_to" >FAQ</a></li>
-
-    </ul>
+      <a href="#" class="logo"><img src="./img/NstuLogo.png" alt=""></a>
+      <ul>
+        <li><a data-link="homeArea" class="scroll_to">Home</a></li>
+        <li><a data-link="aboutArea" class="scroll_to">About</a></li>
+        <li><a data-link="noticeArea" class="scroll_to">Notice</a></li>
+        <li><a data-link="applyArea" class="scroll_to">Apply</a></li>
+        <li><a data-link="login-area" class="scroll_to">Login</a></li>
+        <li><a data-link="faqArea" class="scroll_to">FAQ</a></li>
+  
+      </ul>
     </header>
-    <section class="login" id="homeArea">
-    </section>
+      <!-- <button>Apply Now</button> -->
+  </section>
 
-    <!-- Login Area Section -->
-    <section class="login-div" id="login-area">
-      <form class="loginform" >
-        <div class="mb-3">
-          <img src="./img/loginicon.jpg" alt="">
-          <div class="mb-3 title">
-            Login
-          </div>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Mobile Number">
-        </div> 
-        <div class="mb-3">
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter BillerId">
+
+  <!-- Login Area Section -->
+  <section class="login-div" id="login-area">
+    <form class="loginform">
+      <div class="mb-3">
+        <img src="./img/loginicon.jpg" alt="">
+        <div class="mb-3 title">
+          Login
+        </div>
+        <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Mobile Number">
+      </div>
+      <div class="mb-3">
+        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter BillerId">
+      </div>
+      <div class="mb-3">
+        <a href="#billerIdRecoveryArea">Forget Biller Id ?</a>
+      </div>
+      <button type="submit" class="btn ">Login</button>
+    </form>
+  </section>
+  <!-- Recover Biller Id -->
+  <section class="billerIdRecovery-div" id="billerIdRecoveryArea">
+    <form class="billerIdFromform">
+      <div class="mb-3">
+        <img src="./img/billerIdRecovery3.png" alt="">
+        <div class="mb-3 title">
+          Recover Biller Id
+        </div>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Mobile Number">
+      </div>
+      <div class="mb-3">
+        <p>* Your Biller Id will be sent to this number. </p>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </section>
+  <!-- Apply Section -->
+
+  <section class="apply" id="applyArea">
+    <form class="applicationProcessForm">
+      <div class="mb-3">
+        <img src="./img/applicationProcess2.png" alt="">
+        <div class="mb-3 title">
+          Application Process
         </div>
         <div class="mb-3">
-          <a href="#billerIdRecoveryArea">Forget Biller Id ?</a>
-        </div>
-        <button type="submit" class="btn ">Login</button>
-      </form>
-    </section>
-<!-- Recover Biller Id -->
-    <section class="billerIdRecovery-div" id="billerIdRecoveryArea">
-      <form class="billerIdFromform" >
-        <div class="mb-3">
-          <img src="./img/billerIdRecovery3.png" alt="">
-          <div class="mb-3 title">
-            Recover Biller Id
-          </div>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Mobile Number">
-        </div> 
-        <div class="mb-3">
-         <p>* Your Biller Id will be sent to this number. </p>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </section>
-    <!-- Apply Section -->
-    
-    <section class="apply" id="applyArea">
-      <form class="applicationProcessForm" >
-        <div class="mb-3">
-          <img src="./img/applicationProcess2.png" alt="">
-          <div class="mb-3 title">
-            Application Process
-        </div> 
-        <div class="mb-3">
-          <a id="step1"  href="#login-area"   class="form-control">Step1 :  Pay Application Fee</a>
+          <a id="step1" href="#applicationFeeArea" class="form-control">Step1 : Pay Application Fee</a>
         </div>
         <div class="mb-3">
-          <a id="step2" href="#getBillerIdArea"   class="form-control">Step2 :  Get Biller Id</a>
+          <a id="step2" href="#getBillerIdArea" class="form-control">Step2 : Get Biller Id</a>
         </div>
         <div class="mb-3">
-          <a id="step3"  href="#login-area" class="form-control">
-          Step3 :  Submit Application Form</a>
+          <a id="step3" href="#login-area" class="form-control">
+            Step3 : Submit Application Form</a>
         </div>
         <div class="mb-3">
           <a href="#login-area" class="form-control">Login</a>
         </div>
-      </form>
-    </section>
+    </form>
+  </section>
 
-    <!-- Get Biller Id Section -->
-    <section class="getBillerId" id="getBillerIdArea">
-      <form class="loginform" >
-        <div class="mb-3">
-          <img src="./img/gettingBillerId.png" alt="">
-          <div class="mb-3 title">
-            Get Biller Id
-          </div>
-          <input type="email" class="form-control" id="mobileInputGetBid" placeholder="Enter Your Mobile Number">
-        </div> 
-        <div class="mb-3">
-          <input type="password" class="form-control" id="trxIdGetBid" placeholder="Enter TrxID">
+
+  <!-- Pay Application Fee -->
+  <section class="applicationFee" id="applicationFeeArea">
+    <form class="loginform">
+      <div class="mb-3">
+        <img src="./img/taka.png" alt="">
+        <div class="mb-3 title">
+          Pay Application Fee
         </div>
-        <button type="submit" class="btn ">Submit</button>
-      </form>
-    </section>
+      </div>
+      <div>
+        <div class="bkash" style="width: 50%; margin:auto">
+          <img src="./img/bkash.png" alt="" >
+        </div>
+      </div>
+      <div class="mb-3">
+
+      </div>
+      <p>You have to pay TK.250৳ for the application fee.</p>
+      <button type="submit" class="btn">Pay</button>
+    </form>
+  </section>
 
 
-    <!-- FAQ section -->
-    <section class="faq" id="faqArea">
-      <form class="loginform" >
-        <div class="mb-3">
-          <img src="./img/faq.png" alt="">
-          <div class="mb-3 title">
-            Frequently Ask Question
-          </div>
-        </div> 
-          <!-- Accrodion -->
-          <div class="accordion">
-            <div class="accordion-item accor">
-                <h2 data-bs-target="#child1" data-bs-toggle="collapse" 
-                class="accordion-button">What is PGDIT ?</h2>
-                <div id="child1" class="accordion-collapse collapse show">
-                    <div class="accordion-body">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
-                          elit.Quam suscipit labore error quidem soluta, eius nemo 
-                          eveniet sed officiis ratione?Lorem ipsum dolor,
-                           sit amet consectetur adipisicing elit.
-                  </p>
-                    </div>
-                </div>
+
+  <!-- Get Biller Id Section -->
+  <section class="getBillerId" id="getBillerIdArea">
+    <form class="loginform">
+      <div class="mb-3">
+        <img src="./img/gettingBillerId.png" alt="">
+        <div class="mb-3 title">
+          Get Biller Id
+        </div>
+        <input type="email" class="form-control" id="mobileInputGetBid" placeholder="Enter Your Mobile Number">
+      </div>
+      <div class="mb-3">
+        <input type="password" class="form-control" id="trxIdGetBid" placeholder="Enter TrxID">
+      </div>
+      <button type="submit" class="btn ">Submit</button>
+    </form>
+  </section>
+
+
+  <!-- FAQ section -->
+  <section class="faq" id="faqArea">
+    <form class="loginform">
+      <div class="mb-3">
+        <img src="./img/faq.png" alt="">
+        <div class="mb-3 title">
+          Frequently Ask Question
+        </div>
+      </div>
+      <!-- Accrodion -->
+      <div class="accordion">
+        <div class="accordion-item accor">
+          <h2 data-bs-target="#child1" data-bs-toggle="collapse" class="accordion-button">What is PGDIT ?</h2>
+          <div id="child1" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit.Quam suscipit labore error quidem soluta, eius nemo
+                eveniet sed officiis ratione?Lorem ipsum dolor,
+                sit amet consectetur adipisicing elit.
+              </p>
             </div>
-        
-            <div class="accordion-item accor">
-                <h2 data-bs-target="#child2" data-bs-toggle="collapse" class="accordion-button">How to apply ?</h2>
-                <div id="child2" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam suscipit 
+          </div>
+        </div>
+
+        <div class="accordion-item accor">
+          <h2 data-bs-target="#child2" data-bs-toggle="collapse" class="accordion-button">How to apply ?</h2>
+          <div id="child2" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam suscipit
                 labore error quidem soluta, eius nemo eveniet sed officiis ratione?Lorem ipsum dolor,
                 sit amet consectetur adipisicing elit. </p>
-                    </div>
-                </div>
             </div>
-        
-            <div class="accordion-item accor">
-                <h2 data-bs-target="#child3" data-bs-toggle="collapse" class="accordion-button">How to pay fees ?</h2>
-                <div id="child3" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam suscipit labore 
-                error quidem soluta, eius nemo eveniet sed officiis ratione?Lorem ipsum dolor, sit amet 
+          </div>
+        </div>
+
+        <div class="accordion-item accor">
+          <h2 data-bs-target="#child3" data-bs-toggle="collapse" class="accordion-button">How to pay fees ?</h2>
+          <div id="child3" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam suscipit labore
+                error quidem soluta, eius nemo eveniet sed officiis ratione?Lorem ipsum dolor, sit amet
                 consectetur adipisicing elit. </p>
-                    </div>
-                </div>
             </div>
-        
-            <div class="accordion-item accor">
-                <h2 data-bs-target="#child4" data-bs-toggle="collapse" class="accordion-button">What to get admitted ?</h2>
-                <div id="child4" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam suscipit labore error
+          </div>
+        </div>
+
+        <div class="accordion-item accor">
+          <h2 data-bs-target="#child4" data-bs-toggle="collapse" class="accordion-button">What to get admitted ?</h2>
+          <div id="child4" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam suscipit labore error
                 quidem soluta, eius nemo eveniet sed officiis ratione?Lorem ipsum dolor, sit amet consectetur
-                adipisicing elit. Accusantium quisquam nihil expedita explicabo alias, vel hic itaque 
+                adipisicing elit. Accusantium quisquam nihil expedita explicabo alias, vel hic itaque
                 reprehenderit quidem maiores id tempore quibusdam asperiores! </p>
-                    </div>
-                </div>
             </div>
-           </div>  
-      </form>
-    </section>
-
-
-    <!-- About Section -->
-    <section class="about " id="aboutArea">
-      <div class="bg-light">
-        <div class="container py-5">
-          <!-- <div class="row h-100 align-items-center py-5">
-            <div class="col-lg-6">
-              <h1 class="display-4">About us</h1>
-              <p class="lead text-muted mb-0">
-                Welcome to about us section. Here you will learn inportant information about us.
-              </p>
-            </div>
-          </div> -->
-          <div class="aboutTitle">
-            <h1>About Us</h1>
-          </div>
-          <div class="row align-items-center mb-5">
-            <div class="col-lg-6 order-2 order-lg-1">
-              <h2 class="font-weight-light">
-                Director's Speach
-              </h2>
-              <p class="font-italic text-muted mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2">
-              <img src="./img/campus1.jpeg" alt=""
-               class="img-fluid mb-4 mb-lg-0"></div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-lg-5 px-5 mx-auto">
-              <img src="./img/NstuLogo.png" alt=""
-              class="img-fluid mb-4 mb-lg-0">
-            </div>
-            <div class="col-lg-6">
-              <h2 class="font-weight-light">IIT NSTU</h2>
-              <p class="font-italic text-muted mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                 eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="row mb-4">
-            <div class="col-lg-5">
-              <h2 class="display-4 font-weight-light">
-               Facalty Memebers
-              </h2>
-              <p class="font-italic text-muted">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quisquam.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quis porro doloremque tempore dicta iusto.
-              </p>
-            </div>
-          </div>
-
-          <div class="row text-center">
-            <!-- Team item-->
-            <div class="col-xl-3 col-sm-6 mb-5 ">
-              <div class=" py-5 px-4 facaltyCard ">
-                <img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                <h5 class="mb-0">Manuella Nevoresky</h5>
-                <span class="small text-uppercase text-muted">
-                  CEO - Founder</span>
-                <ul class="social mb-0  list-inline mt-3">
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt="" style="width: 30px;"></button></li>
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/loginicon.jpg" alt="" style="width: 30px;"></button></li>
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/billerIdRecovery3.png" alt="" style="width: 30px;"></button></li>
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt="" style="width: 30px;"></button></li>
-                </ul>
-              </div>
-            </div>
-            <!-- End-->
-      
-            <!-- Team item-->
-            <div class="col-xl-3 col-sm-6 mb-5 ">
-              <div class=" py-5 px-4 facaltyCard ">
-                <img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                <h5 class="mb-0">Manuella Nevoresky</h5>
-                <span class="small text-uppercase text-muted">
-                  CEO - Founder</span>
-                <ul class="social mb-0  list-inline mt-3">
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt="" style="width: 30px;"></button></li>
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/loginicon.jpg" alt="" style="width: 30px;"></button></li>
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/billerIdRecovery3.png" alt="" style="width: 30px;"></button></li>
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt="" style="width: 30px;"></button></li>
-                </ul>
-              </div>
-            </div>
-            <!-- End-->
-      
-            <!-- Team item-->
-            <div class="col-xl-3 col-sm-6 mb-5 ">
-              <div class="py-5 px-4 facaltyCard ">
-                <img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                <h5 class="mb-0">Manuella Nevoresky</h5>
-                <span class="small text-uppercase text-muted">
-                  CEO - Founder</span>
-                <ul class="social mb-0  list-inline mt-3">
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt="" style="width: 30px;"></button></li>
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/loginicon.jpg" alt="" style="width: 30px;"></button></li>
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/billerIdRecovery3.png" alt="" style="width: 30px;"></button></li>
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt="" style="width: 30px;"></button></li>
-                </ul>
-              </div>
-            </div>
-            <!-- End-->
-            <!-- Team item-->
-            <div class="col-xl-3 col-sm-6 mb-5 ">
-              <div class="py-5 px-4 facaltyCard ">
-                <img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                <h5 class="mb-0">Manuella Nevoresky</h5>
-                <span class="small text-uppercase text-muted">
-                  CEO - Founder</span>
-                <ul class="social mb-0  list-inline mt-3">
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt="" style="width: 30px;"></button></li>
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/loginicon.jpg" alt="" style="width: 30px;"></button></li>
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/billerIdRecovery3.png" alt="" style="width: 30px;"></button></li>
-                  <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt="" style="width: 30px;"></button></li>
-                </ul>
-              </div>
-            </div>
-            <!-- End-->
           </div>
         </div>
       </div>
-    </section>    
-  
-    <script src="./js/bootstrap.bundle.js"></script>
-    <script src="./app.js">  </script>
-   
+    </form>
+  </section>
+
+
+
+  <!-- Notice Section -->
+  <section class="about " id="noticeArea">
+    <div class="bg-light">
+      <div class="container py-5">
+        <div class="aboutTitle">
+          <h1>Notice Section</h1>
+        </div>
+        <div class="row ">
+          <!-- Team item-->
+          <div class="col-xl-3 col-sm-6 mb-5 ">
+            <div class=" py-5 px-4 facaltyCard ">
+              <div class="noticeHeadline">
+                <h2>This is notice Headline</h2>
+              </div>
+               <div class="noticeDescription mb-sm-4">
+                Manuella Nevoresky
+                CEO - Founder
+                notice about.  
+               </div>
+                <button class="btn btn-dark">
+                  Read more
+                </button>
+            </div>
+          </div>
+          <!-- End-->
+
+          <!-- Team item-->
+          <div class="col-xl-3 col-sm-6 mb-5 ">
+            <div class=" py-5 px-4 facaltyCard ">
+              <div class="noticeHeadline">
+                <h2>This is notice Headline</h2>
+              </div>
+               <div class="noticeDescription mb-sm-4">
+                Manuella Nevoresky
+                CEO - Founder
+                notice about.  
+               </div>
+                <button class="btn btn-dark">
+                  Read more
+                </button>
+            </div>
+          </div>
+          <!-- End-->
+
+          <!-- Team item-->
+          <div class="col-xl-3 col-sm-6 mb-5 ">
+            <div class=" py-5 px-4 facaltyCard ">
+              <div class="noticeHeadline">
+                <h2>This is notice Headline</h2>
+              </div>
+               <div class="noticeDescription mb-sm-4">
+                Manuella Nevoresky
+                CEO - Founder
+                notice about.  
+               </div>
+                <button class="btn btn-dark">
+                  Read more
+                </button>
+            </div>
+          </div>
+          <!-- End-->
+          <!-- Team item-->
+          <div class="col-xl-3 col-sm-6 mb-5 ">
+            <div class=" py-5 px-4 facaltyCard ">
+              <div class="noticeHeadline">
+                <h2>This is notice Headline</h2>
+              </div>
+               <div class="noticeDescription mb-sm-4">
+                Manuella Nevoresky
+                CEO - Founder
+                notice about.  
+               </div>
+                <button class="btn btn-dark">
+                  Read more
+                </button>
+            </div>
+          </div>
+          <!-- End-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section class="about " id="aboutArea">
+    <div class="bg-light">
+      <div class="container py-5">
+        <div class="aboutTitle">
+          <h1>About Us</h1>
+        </div>
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <h2 class="font-weight-light">
+              Director's Speach
+            </h2>
+            <p class="font-italic text-muted mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2">
+            <img src="./img/campus1.jpeg" alt="" class="img-fluid mb-4 mb-lg-0">
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-5 px-5 mx-auto">
+            <img src="./img/NstuLogo.png" alt="" class="img-fluid mb-4 mb-lg-0">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="font-weight-light">IIT NSTU</h2>
+            <p class="font-italic text-muted mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-lg-5">
+            <h2 class="display-4 font-weight-light">
+              Facalty Memebers
+            </h2>
+            <p class="font-italic text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quisquam.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quis porro doloremque tempore dicta iusto.
+            </p>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <!-- Team item-->
+          <div class="col-xl-3 col-sm-6 mb-5 ">
+            <div class=" py-5 px-4 facaltyCard ">
+              <img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+              <h5 class="mb-0">Manuella Nevoresky</h5>
+              <span class="small text-uppercase text-muted">
+                CEO - Founder</span>
+              <ul class="social mb-0  list-inline mt-3">
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt=""
+                      style="width: 30px;"></button></li>
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/loginicon.jpg" alt=""
+                      style="width: 30px;"></button></li>
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/billerIdRecovery3.png" alt=""
+                      style="width: 30px;"></button></li>
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt=""
+                      style="width: 30px;"></button></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End-->
+
+          <!-- Team item-->
+          <div class="col-xl-3 col-sm-6 mb-5 ">
+            <div class=" py-5 px-4 facaltyCard ">
+              <img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+              <h5 class="mb-0">Manuella Nevoresky</h5>
+              <span class="small text-uppercase text-muted">
+                CEO - Founder</span>
+              <ul class="social mb-0  list-inline mt-3">
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt=""
+                      style="width: 30px;"></button></li>
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/loginicon.jpg" alt=""
+                      style="width: 30px;"></button></li>
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/billerIdRecovery3.png" alt=""
+                      style="width: 30px;"></button></li>
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt=""
+                      style="width: 30px;"></button></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End-->
+
+          <!-- Team item-->
+          <div class="col-xl-3 col-sm-6 mb-5 ">
+            <div class="py-5 px-4 facaltyCard ">
+              <img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+              <h5 class="mb-0">Manuella Nevoresky</h5>
+              <span class="small text-uppercase text-muted">
+                CEO - Founder</span>
+              <ul class="social mb-0  list-inline mt-3">
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt=""
+                      style="width: 30px;"></button></li>
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/loginicon.jpg" alt=""
+                      style="width: 30px;"></button></li>
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/billerIdRecovery3.png" alt=""
+                      style="width: 30px;"></button></li>
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt=""
+                      style="width: 30px;"></button></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End-->
+          <!-- Team item-->
+          <div class="col-xl-3 col-sm-6 mb-5 ">
+            <div class="py-5 px-4 facaltyCard ">
+              <img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+              <h5 class="mb-0">Manuella Nevoresky</h5>
+              <span class="small text-uppercase text-muted">
+                CEO - Founder</span>
+              <ul class="social mb-0  list-inline mt-3">
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt=""
+                      style="width: 30px;"></button></li>
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/loginicon.jpg" alt=""
+                      style="width: 30px;"></button></li>
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/billerIdRecovery3.png" alt=""
+                      style="width: 30px;"></button></li>
+                <li class="list-inline-item"><button style="border: none;"><img src="./img/faq.jpg" alt=""
+                      style="width: 30px;"></button></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/bootstrap.bundle.js"></script>
+  <script src="./app.js">  </script>
+
 </body>
+
 </html>
