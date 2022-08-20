@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- <link rel="stylesheet" href="./billerID.css"> -->
+  <link rel="stylesheet" href="./submitApplicationForm.css">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="./fontawesome/css/fontawesome.min.css">
+
+  <title>Submit Application Form</title>
+</head>
+
+<body>
+  <section class="coverPage" id="homeArea">
+    <header>
+      <a href="#" class="logo"><img src="./img/NstuLogo.png" alt=""></a>
+      <ul>
+        <li><a href="./inedx.html" class="scroll_to">Home</a></li>
+      </ul>
+    </header>
+  </section>
+    <!-- Recover Biller Id -->
+
+
+    <!-- <section class="div-full-container" id="billerId-recovery-area">
+      <form class="div-formating">
+        <div class="mb-3">
+          <img class="div-image-formating" src="./img/loginicon.jpg" alt="">
+          <div class="mb-3 title">
+            <h3 class="div-title-formating">Recover BillerId</h3>
+          </div>
+          <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Mobile Number">
+        </div>
+        <div class="mb-3">
+          <h6>*BillerId Will be send to this numer.</h4>
+        </div>
+        <div class="button-div button-center">
+          <button class="button-formating">
+            <a href="#personalInfo-area">Submit</a>
+            </button>
+        </div>
+      </form>
+    </section> -->
+    <section class="login-div personalInfo " id="personalInfo-area">
+        <div class="form-div div-formating">
+          <form class="loginform">
+            <div class="mb-3">
+              <img class="div-image-formating" src="./img/loginicon.jpg" alt="">
+              <h3>Personal Information</h2>
+    
+                <!-- First Name And Last Name -->
+                <div class="row mt-3">
+                  <div class="col-sm-12 col-md-6 col-lg-6 box-Shadow mt-3">
+                    <input class="full-width" type="text" placeholder=" First Name">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-6 box-Shadow mt-3">
+                    <input class="full-width" type="text" name="" id="" placeholder=" Last Name">
+                  </div>
+                </div>
+    
+                <!-- Father's And Mother's Name -->
+                <div class="row mt-3">
+                  <div class="col-sm-12 col-md-6 col-lg-6 box-Shadow mt-3">
+                    <input class="full-width" type="text" name="" id="" placeholder=" Father's Name">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-6 box-Shadow mt-3">
+                    <input class="full-width" type="text" name="" id="" placeholder="Mother's Name">
+                  </div>
+                </div>
+    
+                <!-- Date of Birth -->
+                <div class="row mt-3">
+                  <div class="col-sm-12 col-md-6 col-lg-3 mt-3">
+                    <label for="date-of-birth">Enter Date of Birth</label>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-3 mt-3 box-Shadow">
+                    <input class="full-width" type="date">
+                  </div>
+                </div>
+    
+                <!-- Mobile Number  -->
+                <div class="row mt-3">
+                  <div class="col-sm-12 col-md-6 col-lg-6 box-Shadow mt-3">
+                    <input class="full-width" type="tel" name="" id="" placeholder=" Mobile Number"
+                      pattern="[0]{1}-[1]{1}[3-9]{1}-[0-9]{8}">
+                  </div>
+                </div>
+    
+                <!-- Gender Part -->
+                <div class="row mt-3">
+                  <div class="col-sm-12 col-md-6 col-lg-2 mt-3">
+                    <label for="date-of-birth">Gender</label>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-10 mt-3 box-Shadow">
+                    <input type="radio" name="g" id="male" value="male">Male
+                    <input type="radio" name="g" id="male" value="female">FeMale
+                    <input type="radio" name="g" id="male" value="other">Other
+                  </div>
+                </div>
+    
+                <!-- Religion And Blood Group -->
+                <div class="row mt-3">
+                  <div class="col-sm-12 col-md-6 col-lg-6 box-Shadow mt-3">
+                    <input class="full-width" type="text" name="" id="" placeholder="Religion">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-6 box-Shadow mt-3">
+                    <select class="neomorphisom full-width" name="" id="">
+                      <option value="" disabled selected>Select Blood Group</option>
+                      <option value="">A+</option>
+                      <option value="">B+</option>
+                      <option value="">O+</option>
+                      <option value="">AB+</option>
+                      <option value="">A-</option>
+                      <option value="">B-</option>
+                      <option value="">O-</option>
+                      <option value="">AB-</option>
+                    </select>
+                  </div>
+                </div>
+    
+                <!-- National ID And Email Address -->
+    
+                <div class="row mt-3">
+                  <div class="col-sm-12 col-md-6 col-lg-6 box-Shadow mt-3">
+                    <input class="full-width" type="number" name="" id="" placeholder="National ID ">
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-6 box-Shadow mt-3">
+                    <input class="full-width" type="email" name="" id="" placeholder="Email Address">
+                  </div>
+                </div>
+    
+                <!-- Present Address And Permanent Address -->
+                <div class="row mt-3">
+                  <div class="col-sm-12 col-md-6 col-lg-6 box-Shadow mt-3">
+                    <textarea class="full-width neomorphisom" name="" id="" cols="25" rows="3" placeholder="Enter permanent Address"></textarea>
+                  </div>
+                  <div class="col-sm-12 col-md-6 col-lg-6 box-Shadow mt-3">
+                    <textarea class="full-width neomorphisom" name="" id="" cols="25" rows="3" placeholder="Enter Present Address"></textarea>
+                  </div>
+                </div>
+            </div>
+            <div class="mb-3 ">
+              <img class="div-image-formating" src="./img/academic.png" alt="" style="margin-top:30px ;">
+             <div class="div-title-formating">
+                <h3 >Academic Qualification</h2>
+             </div>
+              
+    
+                <!-- SSC Result Information -->
+    
+                <div class="row mt-3">
+                  <div class="row">
+                    <h5>SSC or Equivalent Level</h4>
+                      <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                        <select class="neomorphisom full-width" name="" id="">
+                          <option value="" selected disabled>Select Exam</option>
+                          <option value="">S.S.C</option>
+                          <option value="">Dakhil</option>
+                          <option value="">S.S.C Vocational</option>
+                          <option value="">O level</option>
+                          <option value="">S.S.C equivalent</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                        <select class="neomorphisom full-width" name="" id="">
+                          <option value="" selected disabled>Select Board</option>
+                          <option value="">Dhaka</option>
+                          <option value="">Comilla</option>
+                          <option value="">Mymensing</option>
+                          <option value="">Basishal</option>
+                          <option value="">Rajshahi</option>
+                          <option value="">Jessore</option>
+                          <option value="">Chittagonj</option>
+                          <option value="">Sylhet</option>
+                          <option value="">Dinajpure</option>
+                          <option value="">Madrasha</option>
+                          <option value="">Technical</option>
+                          <option value="">Others</option>
+                        </select>
+                        </select>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                        <input class="full-width" type="number" placeholder="SSC Exam Roll">
+                        </select>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                      <select class="neomorphisom full-width" name="" id="">
+                        <option value="" selected disabled>Select Group</option>
+                        <option value="">Science</option>
+                        <option value="">Business Studies</option>
+                        <option value="">Humanities</option>
+                        <option value="">Others</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                      <input class="full-width" type="number" placeholder="SSC Passing year" min="1990" max="2024">
+    
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                      <input class="full-width" type="text" name="" id="" placeholder="SSC Result (GPA)">
+                    </div>
+                  </div>
+                </div>
+    
+    
+                <!-- HSC Result In formation -->
+                <div class="row mt-3">
+                  <div class="row">
+                    <h5>HSC or Equivalent Level</h4>
+                      <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                        <select class="neomorphisom full-width" name="" id="">
+                          <option value="" selected disabled>Select Exam</option>
+                          <option value="">H.S.C</option>
+                          <option value="">Alim</option>
+                          <option value="">Diploma in Engineering/Architechture</option>
+                          <option value="">A level</option>
+                          <option value="">H.S.C equivalent</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                        <select class="neomorphisom full-width" name="" id="">
+                          <option value="" selected disabled>Select Board</option>
+                          <option value="">Dhaka</option>
+                          <option value="">Comilla</option>
+                          <option value="">Mymensing</option>
+                          <option value="">Basishal</option>
+                          <option value="">Rajshahi</option>
+                          <option value="">Jessore</option>
+                          <option value="">Chittagonj</option>
+                          <option value="">Sylhet</option>
+                          <option value="">Dinajpure</option>
+                          <option value="">Madrasha</option>
+                          <option value="">Technical</option>
+                          <option value="">Others</option>
+                        </select>
+                        </select>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                        <input class="full-width" type="number" placeholder="HSC Exam Roll">
+                        </select>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                      <select class="neomorphisom full-width" name="" id="">
+                        <option value="" selected disabled>Select Group</option>
+                        <option value="">Science</option>
+                        <option value="">Business Studies</option>
+                        <option value="">Humanities</option>
+                        <option value="">Others</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                      <input class="full-width" type="number" placeholder="HSC Passing year" min="1990" max="2024">
+    
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                      <input class="full-width" type="text" name="" id="" placeholder="HSC Result (GPA)">
+                    </div>
+                  </div>
+                </div>
+    
+    
+    
+                <!-- Graduation Level  -->
+    
+                <div class="row mt-3">
+                  <div class="row">
+                    <h5>Graduation Level</h4>
+                      <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                        <select class="neomorphisom full-width" name="" id="">
+                          <option value="" selected disabled>Select Exam</option>
+                          <option value="">B.sc</option>
+                          <option value="">Honors</option>
+                          <option value="">Others</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                        <select class="neomorphisom full-width" name="" id="">
+                          <option value="" selected disabled>Subject</option>
+                          <option value="">CS</option>
+                          <option value="">CE</option>
+                          <option value="">CSE</option>
+                          <option value="">SE</option>
+                          <option value="">ACCE</option>
+                          <option value="">MATH</option>
+                          <option value="">FIMS</option>
+                          <option value="">ESDM</option>
+                          <option value="">BLWS</option>
+                          <option value="">STAT</option>
+                          <option value="">BANGLA</option>
+                          <option value="">ENGLISH</option>
+                        </select>
+                        </select>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                        <input class="full-width" type="text" placeholder="University/Institute Name">
+                        </select>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                      <select class="neomorphisom full-width" name="" id="">
+                        <option value="" selected disabled>Course Duration</option>
+                        <option value="">1 Year</option>
+                        <option value="">2 Years</option>
+                        <option value="">3 Years</option>
+                        <option value="">4 Years</option>
+                        <option value="">5 Years</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                      <input class="full-width" type="number" placeholder="Passing year" min="1990" max="2024">
+    
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 box-Shadow mt-3">
+                      <input class="full-width" type="text" name="" id="" placeholder="Result (CGPA)">
+                    </div>
+                  </div>
+                </div>
+          </form>
+
+          
+            <div class="button-div button-center">
+                <button class="button-formating">
+                  <a href="./inedx.html">Submit</a>
+                  </button>
+              </div>
+        
+      </section>
+  
+  
+  
+    <script src="./js/bootstrap.bundle.js"></script>
+  <script src="./app.js">  </script>
+</body>
+</html>

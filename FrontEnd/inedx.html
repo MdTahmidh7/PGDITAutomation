@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="./fontawesome/css/fontawesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <title>PGDIT Automation</title>
+</head>
+
+<body>
+  <section class="coverPage" id="homeArea">
+    <header>
+      <a href="#" class="logo"><img src="./img/NstuLogo.png" alt=""></a>
+      <ul>
+        <li><a href="#homeArea" class="scroll_to">Home</a></li>
+        <li><a data-link="aboutArea" class="scroll_to">About</a></li>
+        <li><a data-link="noticeArea" class="scroll_to">Notice</a></li>
+        <li><a href="#apply-area" class="scroll_to">Apply</a></li>
+        <li><a href="#login-area" class="scroll_to">Login</a></li>
+        <li><a data-link="faqArea" class="scroll_to">FAQ</a></li>
+
+      </ul>
+    </header>
+    <div class="display">
+     <h2> Welcome to PGDIT, NSTU.</h2>
+    </div>
+  </section>
+
+
+  <!-- Login Area Section -->
+
+  <section class="login-div" id="login-area">
+    <form class="loginform">
+      <div class="mb-3">
+        <img src="./img/loginicon.jpg" alt="">
+        <div class="mb-3 title">
+          <h3>Login</h3>
+        </div>
+        <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Mobile Number">
+      </div>
+      <div class="mb-3">
+        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Enter BillerId">
+      </div>
+      <div class="mb-3">
+        <a href="./billerIdRecovery.html">Forget Biller Id ?</a>
+      </div>
+      <div class="button-div">
+        <button>
+          <a href="#personalInfo-area">LogIn </a>
+          </button>
+      </div>
+    </form>
+  </section>
+    <!-- Recover Biller Id -->
+    <!-- <section class="div-full-container" id="billerId-recovery-area">
+      <form class="div-formating">
+        <div class="mb-3">
+          <img class="div-image-formating" src="./img/loginicon.jpg" alt="">
+          <div class="mb-3 title">
+            <h3 class="div-title-formating">Recover BillerId</h3>
+          </div>
+          <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Mobile Number">
+        </div>
+        <div class="mb-3">
+          <h6>*BillerId Will be send to this numer.</h4>
+        </div>
+        <div class="button-div button-center">
+          <button class="button-formating">
+            <a href="#personalInfo-area">Submit</a>
+            </button>
+        </div>
+      </form>
+    </section> -->
+
+    <!-- _____________Apply Area_____________ -->
+
+    <section class="div-full-container" id="apply-area">
+      <form class="div-formating">
+        <div class="mb-3">
+          <img class="div-image-formating" src="./img/applicationProcess1.png" alt="">
+          <div class="mb-3 title">
+            <h3 class="div-title-formating">Application Process</h3>
+          </div>
+        </div>
+        <div class="mb-3">
+          <a id="step1" href="./payApplicationFee.html" class="form-control">Step1 : Pay Application Fee</a>
+        </div>
+        <div class="mb-3">
+          <a id="step2" href="./getBillerID.html" class="form-control">Step2 : Get Biller Id</a>
+        </div>
+        <div class="mb-3">
+          <a id="step3" href="./enterBillerID.html" class="form-control">
+            Step3 : Submit Application Form</a>
+        </div>
+        <div class="mb-3">
+          <a href="#login-area" class="form-control">Login</a>
+        </div>
+      </form>
+    </section>
+
+
+
+
+
+
+
+    
+
+  <script src="./js/bootstrap.bundle.js"></script>
+  <script src="./app.js">  </script>
+
+</body>
+
+</html>
